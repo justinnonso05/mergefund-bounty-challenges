@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Hello MergeFund - A fun, animated web experience">
+    <meta name="author" content="MergeFund Contributor">
+    <title>Hello MergeFund - Interactive Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-animation">
+            <div class="loading-text">Loading MergeFund Magic...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Particles Canvas -->
+    <canvas id="particles-canvas" class="particles-canvas"></canvas>
+    
+    <!-- Main Content Container -->
+    <main class="main-container">
+        <!-- Interactive Controls -->
+        <div class="controls-panel" id="controls-panel">
+            <button class="control-btn" id="animation-mode" title="Change Animation Mode">
+                🎨 Mode
+            </button>
+            <button class="control-btn" id="speed-control" title="Animation Speed">
+                ⚡ Speed
+            </button>
+            <button class="control-btn" id="reset-btn" title="Reset Animations">
+                🔄 Reset
+            </button>
+            <button class="control-btn" id="fullscreen-btn" title="Toggle Fullscreen">
+                🔲 Full
+            </button>
+        </div>
+
+        <!-- Main Text Display -->
+        <div class="text-container" id="text-container">
+            <h1 class="main-text" id="main-text">
+                <span class="word" data-word="Hello">Hello</span>
+                <span class="word" data-word="MergeFund">MergeFund</span>
+            </h1>
+            <div class="subtitle" id="subtitle">
+                Welcome to the Future of Developer Collaboration
+            </div>
+        </div>
+
+        <!-- Interactive Elements -->
+        <div class="interactive-elements">
+            <div class="sparkle" data-delay="0"></div>
+            <div class="sparkle" data-delay="200"></div>
+            <div class="sparkle" data-delay="400"></div>
+            <div class="sparkle" data-delay="600"></div>
+            <div class="sparkle" data-delay="800"></div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions" id="instructions">
+            <div class="instruction-item">
+                <kbd>SPACE</kbd> Change Animation Mode
+            </div>
+            <div class="instruction-item">
+                <kbd>↑/↓</kbd> Adjust Speed
+            </div>
+            <div class="instruction-item">
+                <kbd>R</kbd> Reset
+            </div>
+            <div class="instruction-item">
+                <kbd>F</kbd> Fullscreen
+            </div>
+            <div class="instruction-item">
+                <strong>Click</strong> for Surprise Effects
+            </div>
+        </div>
+    </main>
+
+    <!-- Audio Elements (optional) -->
+    <audio id="click-sound" preload="auto">
+        <!-- Sound files would go here -->
+    </audio>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
